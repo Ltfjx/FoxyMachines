@@ -38,7 +38,7 @@ public class HeadlessHorseman extends CustomBoss {
     private static final NamespacedKey PATTERN_KEY = new NamespacedKey(FoxyMachines.getInstance(), "pattern");
 
     public HeadlessHorseman() {
-        super("HEADLESS_HORSEMAN", ChatColor.RED + "無頭騎士", EntityType.SKELETON, 1,
+        super("HEADLESS_HORSEMAN", ChatColor.RED + "无头骑士", EntityType.SKELETON, 1,
                 DamageCause.BLOCK_EXPLOSION, DamageCause.ENTITY_EXPLOSION, DamageCause.THORNS);
     }
 
@@ -63,7 +63,7 @@ public class HeadlessHorseman extends CustomBoss {
     @Nonnull
     @Override
     protected BossBarStyle getBossBarStyle() {
-        return new BossBarStyle("無頭騎士", BarColor.RED, BarStyle.SOLID, BarFlag.PLAY_BOSS_MUSIC);
+        return new BossBarStyle("无头骑士", BarColor.RED, BarStyle.SOLID, BarFlag.PLAY_BOSS_MUSIC);
     }
 
     @Override
