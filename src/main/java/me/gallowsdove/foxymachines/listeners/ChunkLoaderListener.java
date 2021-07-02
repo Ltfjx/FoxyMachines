@@ -36,7 +36,7 @@ public class ChunkLoaderListener implements Listener {
         Block b = e.getBlockPlaced();
         if (b.getChunk().isForceLoaded()) {
             e.setCancelled(true);
-            p.sendMessage(ChatColor.LIGHT_PURPLE + "此區塊已經加載!");
+            p.sendMessage(ChatColor.LIGHT_PURPLE + "此区块已经加载!");
             return;
         }
 
@@ -50,14 +50,14 @@ public class ChunkLoaderListener implements Listener {
             Config cfg = new Config(FoxyMachines.getInstance());
             int max = cfg.getInt("max-chunk-loaders");
             if(max != 0 && max < i) {
-                p.sendMessage(ChatColor.LIGHT_PURPLE + "已放置最大區塊加載器數量: " + max);
+                p.sendMessage(ChatColor.LIGHT_PURPLE + "已放置最大区块加载器数量: " + max);
                 e.setCancelled(true);
                 return;
             }
         }
 
         if (SlimefunPlugin.getGPSNetwork().getNetworkComplexity(p.getUniqueId()) < 7500*i) {
-            p.sendMessage(ChatColor.LIGHT_PURPLE + "提高GPS訊號強度來放置更多區塊加載器.");
+            p.sendMessage(ChatColor.LIGHT_PURPLE + "提高GPS讯号强度来放置更多区块加载器.");
             e.setCancelled(true);
             return;
         }
