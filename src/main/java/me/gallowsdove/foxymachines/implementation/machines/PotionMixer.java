@@ -59,7 +59,7 @@ public class PotionMixer extends SlimefunItem implements EnergyNetComponent {
         });
 
 
-        new BlockMenuPreset(getId(), "&6藥水混合器") {
+        new BlockMenuPreset(getId(), "&6药水混合器") {
 
             @Override
             public void init() {
@@ -392,20 +392,20 @@ public class PotionMixer extends SlimefunItem implements EnergyNetComponent {
                 }
 
                 List<String> lore = new ArrayList<>() {{
-                    add("無法在釀造台上使用");
+                    add("无法在酿造台上使用");
                 }};
                 potionMeta.setBasePotionData(new PotionData(PotionType.UNCRAFTABLE, false, false));
                 switch(potion1.getType()){
                     case POTION:
-                        potionMeta.setDisplayName(ChatColor.AQUA + "混和藥水");
+                        potionMeta.setDisplayName(ChatColor.AQUA + "混和药水");
                         break;
                     case LINGERING_POTION:
-                        lore.add(ChatColor.RED + "由於Minecraft顯示的時間不正確");
-                        lore.add(ChatColor.RED + "錯誤,將其乘以4得到真實時間.");
-                        potionMeta.setDisplayName(ChatColor.AQUA + "混和滯留藥水");
+                        lore.add(ChatColor.RED + "由于Minecraft显示的时间不正确");
+                        lore.add(ChatColor.RED + "错误,将其乘以4得到真实时间.");
+                        potionMeta.setDisplayName(ChatColor.AQUA + "混和滞留药水");
                         break;
                     case SPLASH_POTION:
-                        potionMeta.setDisplayName(ChatColor.AQUA + "混和飛濺藥水");
+                        potionMeta.setDisplayName(ChatColor.AQUA + "混和飞溅药水");
                         break;
                 }
                 potionMeta.setLore(lore);
