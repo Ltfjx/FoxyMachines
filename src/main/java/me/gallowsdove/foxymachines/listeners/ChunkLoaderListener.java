@@ -57,7 +57,7 @@ public class ChunkLoaderListener implements Listener {
         }
 
         if (SlimefunPlugin.getGPSNetwork().getNetworkComplexity(p.getUniqueId()) < 7500*i) {
-            p.sendMessage(ChatColor.LIGHT_PURPLE + "提高GPS讯号强度来放置更多区块加载器.");
+            p.sendMessage(ChatColor.LIGHT_PURPLE + "提高GPS信号强度来放置更多区块加载器.");
             e.setCancelled(true);
             return;
         }
