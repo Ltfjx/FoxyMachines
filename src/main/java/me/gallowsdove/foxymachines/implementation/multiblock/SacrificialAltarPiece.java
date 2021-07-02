@@ -38,7 +38,7 @@ public class SacrificialAltarPiece extends SlimefunItem {
                     if (BlockStorage.getLocationInfo(b.getLocation(), "complete") != null &&
                             BlockStorage.getLocationInfo(b.getLocation(), "complete").equals("true")) {
                         BlockStorage.addBlockInfo(b, "complete", "false");
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭壇的一部份已被破壞, 請修復並重新啟動!");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭坛的一部份已被破坏, 请修复并重新启动!");
                     }
                 }
 
