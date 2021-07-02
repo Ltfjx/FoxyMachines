@@ -27,8 +27,8 @@ public class QuestCommand extends AbstractCommand {
         } else if (SlimefunUtils.isItemSimilar(p.getInventory().getItemInMainHand(), Items.CELESTIAL_SWORD, false, false)) {
             QuestUtils.sendQuestLine(p, Items.CELESTIAL_SWORD);
         } else {
-            p.sendMessage(ChatColor.LIGHT_PURPLE + "你必須拿著 " + ChatColor.RED + "詛咒之劍" +
-                    ChatColor.LIGHT_PURPLE + " 或者 " + ChatColor.YELLOW + "天劍" + ChatColor.LIGHT_PURPLE + " 來檢查你的任務.");
+            p.sendMessage(ChatColor.LIGHT_PURPLE + "你必须拿着 " + ChatColor.RED + "诅咒之剑" +
+                    ChatColor.LIGHT_PURPLE + " 或者 " + ChatColor.YELLOW + "天剑" + ChatColor.LIGHT_PURPLE + " 来检查你的任务.");
         }
     }
 
