@@ -100,7 +100,7 @@ public class ForcefieldListener implements Listener {
                     int zdif = (int) (l.getZ() - loc.getZ());
                     if (Math.floor(Math.sqrt((xdif * xdif) + (ydif * ydif) + (zdif * zdif))) <= 32) {
                         e.setCancelled(true);
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你無法傳送到穹頂!");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你无法传送到穹顶!");
                         break;
                     }
                 }
