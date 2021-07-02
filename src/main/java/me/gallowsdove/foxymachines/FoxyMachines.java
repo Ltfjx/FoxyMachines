@@ -59,7 +59,7 @@ public class FoxyMachines extends AbstractAddon {
     @Nonnull
     @Override
     protected String getGithubPath() {
-        return "xMikux/FoxyMachines/master";
+        return "Ltfjx/FoxyMachines/master";
     }
 
     @Override
