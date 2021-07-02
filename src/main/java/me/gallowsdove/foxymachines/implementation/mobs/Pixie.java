@@ -14,7 +14,7 @@ import javax.annotation.Nonnull;
 
 public class Pixie extends CustomMob {
     public Pixie() {
-        super("PIXIE", "精靈", EntityType.VEX, 5);
+        super("PIXIE", "精灵", EntityType.VEX, 5);
     }
 
     @Override
