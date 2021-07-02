@@ -41,10 +41,10 @@ public class SacrificialAltarPressurePlate extends SlimefunItem {
                 Block b = e.getBlockPlaced();
                 if (isComplete(b)) {
                     BlockStorage.addBlockInfo(b, "complete", "true");
-                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭壇已啟動.");
+                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭坛已启动.");
                 } else {
                     BlockStorage.addBlockInfo(b, "complete", "false");
-                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "完成你的祭壇, 點擊此方塊一次來啟動它.");
+                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "完成你的祭坛, 点击此方块一次来启动它.");
                 }
             }
         };
@@ -58,10 +58,10 @@ public class SacrificialAltarPressurePlate extends SlimefunItem {
                 if (BlockStorage.getLocationInfo(b.getLocation(), "complete").equals("false")) {
                     if (isComplete(b)) {
                         BlockStorage.addBlockInfo(b, "complete", "true");
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭壇已啟動.");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭坛已启动.");
                     } else {
                         BlockStorage.addBlockInfo(b, "complete", "false");
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭壇還沒有完成!");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭坛还没有完成!");
                     }
                 }
 
@@ -76,7 +76,7 @@ public class SacrificialAltarPressurePlate extends SlimefunItem {
             public void onPlayerBreak(@Nonnull BlockBreakEvent e, @Nonnull ItemStack item, @Nonnull List<ItemStack> drops) {
                 BlockStorage.addBlockInfo(e.getBlock(), "complete", null);
                 BlockStorage.clearBlockInfo(e.getBlock());
-                e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭壇已被破壞!");
+                e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "祭坛已被破坏!");
             }
         };
     }
