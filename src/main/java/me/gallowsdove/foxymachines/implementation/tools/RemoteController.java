@@ -53,9 +53,9 @@ public class RemoteController extends SlimefunItem implements NotPlaceable, Rech
 
                         loc.storePersistently(container);
                         itemInInventory.setItemMeta(meta);
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "已將穹頂力場綁定至遙控裝置.");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "已将穹顶力场绑定至遥控装置.");
                     } else {
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你必須將此綁定至穹頂力場方塊.");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你必须将此绑定至穹顶力场方块.");
                     }
                 }
             } else {
@@ -70,13 +70,13 @@ public class RemoteController extends SlimefunItem implements NotPlaceable, Rech
                         if (removeItemCharge(item, COST)) {
                             ForcefieldDome.INSTANCE.switchActive(b, e.getPlayer());
                         } else {
-                            e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "請先為遙控裝置充電.");
+                            e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "请先为遥控装置充电.");
                         }
                     } else {
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "找不到屬於此遙控裝置的穹頂.");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "找不到属于此遥控装置的穹顶.");
                     }
                 } else {
-                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "將此物品用 Shift + 右鍵綁定!");
+                    e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "将此物品用 Shift + 右键绑定!");
                 }
             }
         };
