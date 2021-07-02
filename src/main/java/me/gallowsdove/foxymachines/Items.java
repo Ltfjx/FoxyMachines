@@ -99,7 +99,7 @@ public final class Items{
             Material.SMITHING_TABLE,
             "&b改进锻造机",
             "",
-            "&7用於改善粘液科技的工具,武器与盔甲.",
+            "&7用于改善粘液科技的工具,武器与盔甲.",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             LoreBuilder.powerPerSecond(ImprovementForge.ENERGY_CONSUMPTION)
