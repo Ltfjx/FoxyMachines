@@ -44,9 +44,9 @@ public class GhostBlockRemover extends SlimefunItem {
                         SlimefunItemStack stack = new SlimefunItemStack(
                                 "GHOST_BLOCK_" + material.name().toUpperCase(),
                                 material,
-                                "鬼方塊: &6" + StringUtils.capitalize(material.name().replace("_", " ").toLowerCase()),
+                                "幽灵方块: &6" + StringUtils.capitalize(material.name().replace("_", " ").toLowerCase()),
                                 "",
-                                "&7無形的方塊.");
+                                "&7无形的方块.");
 
                         block.getWorld().dropItemNaturally(block.getLocation(), stack);
                         block.remove();
