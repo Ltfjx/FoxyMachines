@@ -85,6 +85,7 @@ public class FoxyMachines extends AbstractAddon {
     @Override
     public String getAutoUpdatePath() {
         return "auto-update";
+    }
 
     @Nonnull
     public static FoxyMachines getInstance() {
