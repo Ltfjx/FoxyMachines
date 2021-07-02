@@ -124,11 +124,11 @@ public class SwordListener implements Listener {
             if (e.getEntity().getType() == QuestUtils.toEntityType(id)) {
                 if (SlimefunUtils.isItemSimilar(inventory.getItemInMainHand(), Items.CURSED_SWORD, false, false)) {
                     inventory.addItem(new SlimefunItemStack(Items.CURSED_SHARD, 1));
-                    p.sendMessage(ChatColor.RED + "詛咒之劍非常的高興.");
+                    p.sendMessage(ChatColor.RED + "诅咒之剑非常的高兴.");
                     container.set(QuestUtils.KEY, PersistentDataType.INTEGER, ThreadLocalRandom.current().nextInt(52));
                 } else if (SlimefunUtils.isItemSimilar(inventory.getItemInMainHand(), Items.CELESTIAL_SWORD, false, false)) {
                     inventory.addItem(new SlimefunItemStack(Items.CELESTIAL_SHARD, 1));
-                    p.sendMessage(ChatColor.YELLOW + "天劍非常的高興.");
+                    p.sendMessage(ChatColor.YELLOW + "天剑非常的高兴.");
                     container.set(QuestUtils.KEY, PersistentDataType.INTEGER, ThreadLocalRandom.current().nextInt(52));
                 }
             }
