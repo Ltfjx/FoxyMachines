@@ -21,30 +21,30 @@ public class QuestUtils {
     public static NamespacedKey KEY = new NamespacedKey(FoxyMachines.getInstance(), "quest");
 
     private static final List<Line> CURSED_LINES = List.of(
-            new Line("我很想殺死一隻 ", ", 多麼的好吃!"),
-            new Line("給我一隻 ", ", 現在!"),
-            new Line("你當然可以幫我殺一隻 ", "."),
-            new Line("我想要鮮血....  ", " 的鮮血."),
-            new Line("我要一隻 ", " 的肝臟."),
-            new Line("我有聽說過 ", " 的鮮血多麼的美味..."),
-            new Line("", " 心臟, hmmm..."),
-            new Line("我會殺死上帝自己的 ", " 肉."),
-            new Line("我可能會吞食 ", " 一整天."),
-            new Line("我已經等待太久. 太久時間或一天來殺死一隻 ", "."),
-            new Line("", "的鮮血將要噴灑"),
-            new Line("我的詛咒將會吞噬 ", "的靈魂"));
+            new Line("我很想杀死一只 ", ", 多么的好吃!"),
+            new Line("给我一只 ", ", 现在!"),
+            new Line("你当然可以帮我杀一只 ", "."),
+            new Line("我想要鲜血....  ", " 的鲜血."),
+            new Line("我要一只 ", " 的肝脏."),
+            new Line("我有听说过 ", " 的鲜血多么的美味..."),
+            new Line("", " 心脏, hmmm..."),
+            new Line("我会杀死上帝自己的 ", " 肉."),
+            new Line("我可能会吞食 ", " 一整天."),
+            new Line("我已经等待太久. 太久时间或一天来杀死一只 ", "."),
+            new Line("", "的鲜血将要喷洒"),
+            new Line("我的诅咒将会吞噬 ", "的灵魂"));
     private static final List<Line> CELESTIAL_LINES = List.of(
-            new Line("我愛所有人... 除了 ", ", 我憎恨那些."),
-            new Line("眾生必須平等, 這就是為甚麼我需要殺死一隻 ", "."),
-            new Line("我是天上, 但我也是一把劍. 現在給我一隻 ", "."),
-            new Line("我很抱歉, 但請給我一些 ", ". 不許問任何問題."),
-            new Line("天劍需要天祭. 一隻 ", "."),
-            new Line("我下一個受害者應該是 ", ", 就像是神所打算的."),
-            new Line("接下來是 ... ", "!"),
+            new Line("我爱所有人... 除了 ", ", 我憎恨那些."),
+            new Line("众生必须平等, 这就是为甚么我需要杀死一只 ", "."),
+            new Line("我是天上, 但我也是一把剑. 现在给我一只 ", "."),
+            new Line("我很抱歉, 但请给我一些 ", ". 不许问任何问题."),
+            new Line("天剑需要天祭. 一只 ", "."),
+            new Line("我下一个受害者应该是 ", ", 就像是神所打算的."),
+            new Line("接下来是 ... ", "!"),
             new Line("上帝要 ", " 死亡."),
-            new Line("為了上帝和榮譽, 請殺死 ", "."),
-            new Line("去, 拿到那隻 ", "! 為了正義!"),
-            new Line("星星已對齊. 我可以清楚的看到 ", " 會被我的刀刃殺死"));
+            new Line("为了上帝和荣誉, 请杀死 ", "."),
+            new Line("去, 拿到那只 ", "! 为了正义!"),
+            new Line("星星已对齐. 我可以清楚的看到 ", " 会被我的刀刃杀死"));
 
     @ParametersAreNonnullByDefault
     public static void sendQuestLine(Player p, SlimefunItemStack item) {
@@ -193,13 +193,13 @@ public class QuestUtils {
             case 2:
                 return "烈焰使者";
             case 3:
-                return "貓";
+                return "猫";
             case 4:
-                return "雞";
+                return "鸡";
             case 5:
                 return "洞穴蜘蛛";
             case 6:
-                return "鱈魚";
+                return "鳕鱼";
             case 7:
                 return "牛";
             case 8:
@@ -207,89 +207,89 @@ public class QuestUtils {
             case 9:
                 return "海豚";
             case 10:
-                return "驢子";
+                return "驴子";
             case 11:
-                return "沉屍";
+                return "沉尸";
             case 12:
-                return "終界使者";
+                return "终界使者";
             case 13:
                 return "狐狸";
             case 14:
-                return "地獄幽靈";
+                return "地狱幽灵";
             case 15:
-                return "深海守衛";
+                return "深海守卫";
             case 16:
-                return "豬布獸";
+                return "猪布兽";
             case 17:
-                return "屍殼";
+                return "尸壳";
             case 18:
-                return "馬";
+                return "马";
             case 19:
-                return "鐵魔像";
+                return "铁魔像";
             case 20:
-                return "駱馬";
+                return "骆马";
             case 21:
-                return "岩漿立方怪";
+                return "岩浆立方怪";
             case 22:
                 return "哞菇";
             case 23:
-                return "山貓";
+                return "山猫";
             case 24:
-                return "貓熊";
+                return "猫熊";
             case 25:
-                return "鸚鵡";
+                return "鹦鹉";
             case 26:
                 return "夜魅";
             case 27:
-                return "豬";
+                return "猪";
             case 28:
-                return "豬布林";
+                return "猪布尔";
             case 29:
-                return "豬布林蠻兵";
+                return "猪布尔蛮兵";
             case 30:
-                return "掠奪者";
+                return "掠夺者";
             case 31:
-                return "北極熊";
+                return "北极熊";
             case 32:
                 return "河豚";
             case 33:
                 return "兔子";
             case 34:
-                return "鮭魚";
+                return "鲑鱼";
             case 35:
-                return "綿羊";
+                return "绵羊";
             case 36:
-                return "蠹魚";
+                return "蠹鱼";
             case 37:
-                return "骷髏";
+                return "骷髅";
             case 38:
-                return "史萊姆";
+                return "史莱姆";
             case 39:
                 return "雪人";
             case 40:
                 return "蜘蛛";
             case 41:
-                return "魷魚";
+                return "鱿鱼";
             case 42:
                 return "流髑";
             case 43:
-                return "熾足獸";
+                return "炽足兽";
             case 44:
-                return "海龜";
+                return "海龟";
             case 45:
-                return "熱帶魚";
+                return "热带鱼";
             case 46:
                 return "女巫";
             case 47:
-                return "凋零骷髏";
+                return "凋零骷髅";
             case 48:
                 return "狼";
             case 49:
-                return "豬屍獸";
+                return "猪尸兽";
             case 50:
-                return "殭屍";
+                return "殭尸";
             case 51:
-                return "殭屍化豬布林";
+                return "殭尸化猪布尔";
         }
         return "狐狸";
     }
