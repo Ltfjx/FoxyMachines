@@ -125,24 +125,24 @@ public final class ForcefieldDome extends SlimefunItem implements EnergyNetCompo
                         if (active.equals("false")) {
                             if (getCharge(b.getLocation()) >= ENERGY_CONSUMPTION) {
                                 setDomeActive(b);
-                                e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "已啟動穹頂.");
+                                e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "已启动穹顶.");
 
                                 BlockStorage.addBlockInfo(b, "cooldown", "true");
                                 FoxyMachines.getInstance().runAsync(() ->
                                         BlockStorage.addBlockInfo(b, "cooldown", "false"), 200);
                             } else {
-                                e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你沒有足夠的能源.");
+                                e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你没有足够的能源.");
                             }
                         } else {
                             setDomeInactive(b);
-                            e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "已停用穹頂.");
+                            e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "已停用穹顶.");
 
                             BlockStorage.addBlockInfo(b, "cooldown", "true");
                             FoxyMachines.getInstance().runAsync(() ->
                                     BlockStorage.addBlockInfo(b, "cooldown", "false"), 200);
                         }
                     } else {
-                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你必須等待至少10秒才能再次啟動穹頂一次.");
+                        e.getPlayer().sendMessage(ChatColor.LIGHT_PURPLE + "你必须等待至少10秒才能再次启动穹顶一次.");
                     }
                     e.cancel();
                 }
@@ -199,24 +199,24 @@ public final class ForcefieldDome extends SlimefunItem implements EnergyNetCompo
             if (active.equals("false")) {
                 if (getCharge(b.getLocation()) >= ENERGY_CONSUMPTION) {
                     setDomeActive(b);
-                    p.sendMessage(ChatColor.LIGHT_PURPLE + "已啟動穹頂.");
+                    p.sendMessage(ChatColor.LIGHT_PURPLE + "已启动穹顶.");
 
                     BlockStorage.addBlockInfo(b, "cooldown", "true");
                     FoxyMachines.getInstance().runAsync( () ->
                             BlockStorage.addBlockInfo(b, "cooldown", "false"), 200);
                 } else {
-                    p.sendMessage(ChatColor.LIGHT_PURPLE + "你沒有足夠的能源.");
+                    p.sendMessage(ChatColor.LIGHT_PURPLE + "你没有足够的能源.");
                 }
             } else {
                 setDomeInactive(b);
-                p.sendMessage(ChatColor.LIGHT_PURPLE + "已停用穹頂.");
+                p.sendMessage(ChatColor.LIGHT_PURPLE + "已停用穹顶.");
 
                 BlockStorage.addBlockInfo(b, "cooldown", "true");
                 FoxyMachines.getInstance().runAsync( () ->
                         BlockStorage.addBlockInfo(b, "cooldown", "false"), 200);
             }
         } else {
-            p.sendMessage(ChatColor.LIGHT_PURPLE + "你必須等待至少10秒才能再次啟動穹頂一次.");
+            p.sendMessage(ChatColor.LIGHT_PURPLE + "你必须等待至少10秒才能再次启动穹顶一次.");
         }
     }
 
