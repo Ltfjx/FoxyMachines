@@ -59,7 +59,7 @@ public class ElectricGoldRefinery extends SlimefunItem implements EnergyNetCompo
         });
 
 
-        new BlockMenuPreset(getId(), "&6電動精煉機") {
+        new BlockMenuPreset(getId(), "&6电动精炼机") {
 
             @Override
             public void init() {
@@ -80,21 +80,21 @@ public class ElectricGoldRefinery extends SlimefunItem implements EnergyNetCompo
                 if (!BlockStorage.hasBlockInfo(b) ||
                         BlockStorage.getLocationInfo(b.getLocation(), "gold_recipe") == null ||
                         BlockStorage.getLocationInfo(b.getLocation(), "gold_recipe").equals("11")) {
-                    menu.replaceExistingItem(32, new CustomItem(Material.RED_STAINED_GLASS_PANE, "&6當前合成: &c無", "", "&e> 從左側選擇進行更改"));
+                    menu.replaceExistingItem(32, new CustomItem(Material.RED_STAINED_GLASS_PANE, "&6当前合成: &c无", "", "&e> 从左侧选择进行更改"));
                 } else {
                     switch (BlockStorage.getLocationInfo(b.getLocation(), "gold_recipe")) {
-                        case "0" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(4 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "1" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(6 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "2" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(8 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "3" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(10 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "4" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(12 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "5" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(14 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "6" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(16 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "7" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(18 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "8" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(20 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "9" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(22 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "10" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6當前合成: &f金錠 &7(24 克拉)", "", "&e> 從左側選擇進行更改"));
-                        case "11" -> menu.replaceExistingItem(32, new CustomItem(Material.RED_STAINED_GLASS_PANE, "&6當前合成: &無", "", "&e> 從左側選擇進行更改"));
+                        case "0" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(4 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "1" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(6 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "2" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(8 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "3" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(10 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "4" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(12 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "5" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(14 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "6" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(16 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "7" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(18 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "8" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(20 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "9" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(22 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "10" -> menu.replaceExistingItem(32, new CustomItem(Material.GOLD_INGOT, "&6当前合成: &f金锭 &7(24 克拉)", "", "&e> 从左侧选择进行更改"));
+                        case "11" -> menu.replaceExistingItem(32, new CustomItem(Material.RED_STAINED_GLASS_PANE, "&6当前合成: &无", "", "&e> 从左侧选择进行更改"));
                     }
                 }
             }
@@ -322,7 +322,7 @@ public class ElectricGoldRefinery extends SlimefunItem implements EnergyNetCompo
         }
 
         preset.addItem(23, new CustomItem(Material.BLACK_STAINED_GLASS_PANE, " "), ChestMenuUtils.getEmptyClickHandler());
-        preset.addItem(46, new CustomItem(Material.RED_STAINED_GLASS_PANE, "&c無"), ChestMenuUtils.getEmptyClickHandler());
+        preset.addItem(46, new CustomItem(Material.RED_STAINED_GLASS_PANE, "&c无"), ChestMenuUtils.getEmptyClickHandler());
 
         NamespacedKey key = new NamespacedKey(FoxyMachines.getInstance(), "nonstackable");
 
